@@ -75,7 +75,7 @@ $_SESSION['userid'] = 0;
                                 
                                 close($link);
                                 
-                                header("Location: http://localhost/Shopper/list.php");
+                                header("Location: https://shopper-csec384.herokuapp.com/list.php");
                                 
                                 exit();
                             }
