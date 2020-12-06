@@ -3,9 +3,13 @@
 function connect() {
 
     //set up variables used to connect to MySQL
-    $dbhost = 'localhost:3306';
+    /* $dbhost = 'localhost:3306';
     $dbuser = 'root';
-    $dbpass = '';
+    $dbpass = ''; */
+    
+    $dbhost = 'us-cdbr-east-02.cleardb.com';
+    $dbuser = 'b335958df4a91d';
+    $dbpass = '1e1e9f7e';
 
     //connect to MySQL
     $link = mysqli_connect($dbhost, $dbuser, $dbpass);
@@ -14,7 +18,7 @@ function connect() {
     }
 
     //select shopper database
-    $retval = mysqli_select_db($link, 'shopper');
+    $retval = mysqli_select_db($link, 'heroku_fea41581d968989');
     if (!$retval) {
         die('Could not select database:' . mysqli_errno($link));
     }
